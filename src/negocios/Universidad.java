@@ -13,7 +13,7 @@ public class Universidad {
 	public Universidad() {
 		estudiantes = new Lista<Estudiante>();
 		recursos = new Lista<Recurso>();
-		prestamos = new Lista<Prestamo>();
+		prestamos = new Lista<Prestamo>();jjj
 		recursos.agregar(new Recurso(10,"Guitarra",true));
 		recursos.agregar(new Recurso(20,"Violin",true));
 		recursos.agregar(new Recurso(30,"Trompeta",true));
