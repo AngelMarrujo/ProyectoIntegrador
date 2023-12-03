@@ -39,7 +39,7 @@ public class Universidad {
 	public boolean agregarEstudiante(int codigo, String nombre,
 			String email,Fecha fechaNac, String sexo, String programa)
 					throws PosicionIlegalException{
-		//Estudiante est = buscarEstudiante(codigo);
+		Estudiante est = buscarEstudiante(codigo);
 		//Modifique la siguiente línes para que busque al estudiante
 		//utilizando el método buscarEstudiante
 		Estudiante est = null; //deberá sustituir el null por la accion correcta
