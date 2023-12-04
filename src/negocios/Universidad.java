@@ -42,7 +42,7 @@ public class Universidad {
 		Estudiante est = buscarEstudiante(codigo);
 		//Modifique la siguiente línes para que busque al estudiante
 		//utilizando el método buscarEstudiante
-		Estudiante est = null; //deberá sustituir el null por la accion correcta
+		 //deberá sustituir el null por la accion correcta
 		if (est == null) {
 			estudiantes.agregar(new Estudiante(codigo, nombre,
 					email, fechaNac, sexo, programa));
@@ -129,7 +129,7 @@ public class Universidad {
 		Lista<Recurso> recursosprestados = new Lista<Recurso>();
 		//Modifique el cabecero del siguiente for (linea 132), para que muestre todos los 
 		//elementos de la lista ya que hay un error
-		for(int i=1;i<prestamos.getTamanio();i++) {
+		for(int i=0;i<prestamos.getTamanio();i++) {
 			Prestamo pres = prestamos.getValor(i);
 			if (pres.getEstudiante().getCodigo() ==codigo && 
 					!pres.getRecurso().isDisponible()) {
@@ -259,6 +259,19 @@ public class Universidad {
 	
 	public Lista<Estudiante> mostrarEstudiantesMasDeTres() throws PosicionIlegalException {
 		 Lista<Estudiante> prestamosMasDeTres=new Lista<Estudiante>();
+		
+		 for(int i=0; i<estudiantes.getTamanio();i++) {
+			  int contador =0;
+			 for(int j=0; j<prestamos.getTamanio();j++) {
+			 if(prestamos.getValor(j).getEstudiante().getCodigo()== estudiantes.getValor(i).getCodigo()) {
+			 contador++;
+			 }
+			 }
+			 if(contador>2) {
+				 prestamosMasDeTres.agregar(estudiantes.getValor(i));
+			 }
+			
+		}
 		
 		
 		
