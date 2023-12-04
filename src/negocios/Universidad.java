@@ -267,7 +267,7 @@ public class Universidad {
 			 contador++;
 			 }
 			 }
-			 if(contador>2) {
+			 if(contador>3) {
 				 prestamosMasDeTres.agregar(estudiantes.getValor(i));
 			 }
 			
