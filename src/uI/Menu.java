@@ -67,8 +67,8 @@ public class Menu {
 				//a los estudiantes que tienen mas de tres préstamos
 				//el método se encuetra en la clase MenuOpciones y se llama:
 				//consultarRecursosEstudianteMasDeTres
-				//iOpc.consultarRecursosEstudianteMasDeTres();
-				//break;
+				iOpc.consultarRecursosEstudianteMasDeTres();
+				break;
 			case 99:
 				salir();
 				break;
